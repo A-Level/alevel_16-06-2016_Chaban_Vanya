@@ -365,7 +365,8 @@ button.submit:hover{
 	padding: 10px;
 }
 .aside ul li:last-child{
-	border-bottom:1px solid #c7c7c7;
+
+	/*border-bottom:1px solid #c7c7c7;*/
 }
 .aside ul li i{
 	float: right;
@@ -373,33 +374,37 @@ button.submit:hover{
 	font-weight: 700;
 }
 .aside ul li:hover{
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	border-top:1px solid #c7c7c7;
 	border-bottom:1px solid #c7c7c7;
 	font-weight: 700;
 	background-color: #fff;
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /*slider*/
 .slider{
 	-webkit-box-shadow: 2px 2px 4px #8c8c8c;
 	        box-shadow: 2px 2px 4px #8c8c8c;
+	height: 542px;
 }
-.sl{
+/*.sl{
 	position: relative;
 	top: 7px;
-}
-.slogan .sg_sl{
-	color: #E31837;
-	font-weight: 700;
-	text-align: center;
-	padding-top: 30px;
-	padding-bottom: 15px;
-	font-family: Arial;
-	font-size: 24px;
-	line-height: 32px;
-}
+}*/
+/*.slogan{
+	.sg_sl{
+		color: var(--allo);
+		font-weight: bold;
+		text-align: center;
+		padding-top: 30px;
+		padding-bottom: 15px;
+		font-family: Arial;
+		font-size: 24px;
+		line-height: 32px;
+	}
+}*/
 
 /*popular products*/
 .h4{
@@ -664,6 +669,11 @@ button.buy:hover{
 	}
 .top_line{
 	border-top: 2px solid #E31837;
+}
+
+.menu2> a:nth-of-type(1),
+.menu2 #tab-2:target~ a:nth-of-type(1){
+	margin-left: 20px;
 }
 
 /*history*/
