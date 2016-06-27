@@ -382,7 +382,9 @@ button.submit:hover{
 	background-color: #fff;
 	box-sizing: border-box;
 }
-
+.content .container{
+	height: 550px;
+}
 /*slider*/
 .slider{
 	-webkit-box-shadow: 2px 2px 4px #8c8c8c;
@@ -826,4 +828,75 @@ footer img {
 .prod_sl .slick-disabled
 {
     opacity: .25;
+}
+/*next and prew button*/
+/*.prod_sl{
+	width: 1050px;
+	margin: 0 auto;
+}*/
+.sl .slick-prev,
+.sl .slick-next{
+	color: transparent;
+	background-color: transparent;
+}
+.sl .slick-prev{
+	border: 20px solid transparent;
+	border-right: 20px solid #cccccc;
+	-webkit-border-radius: 10px;
+	        border-radius: 10px;
+	position: absolute;
+	left:260px;
+	z-index: 9;
+	-webkit-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+}
+.sl .slick-prev:hover{
+	border-right: 20px solid #fff;
+}
+.sl .slick-next{
+	border: 20px solid transparent;
+	border-left: 20px solid #cccccc;
+	-webkit-border-radius: 10px;
+	        border-radius: 10px;
+	position: absolute;
+	right:-5px;
+	z-index: 9;
+	-webkit-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+
+}
+.sl .slick-next:hover{
+	border-left: 20px solid #fff;
+}
+.sl .slick-disabled,
+.sl .slick-disabled
+{
+    opacity: .25;
+}
+
+.background_button1 {
+	width: 30px;
+	height: 50px;
+	background-color: #939393;
+	position: relative;
+	z-index: 8;
+	top: -300px;
+	left:275px;
+	-webkit-border-radius: 4px;
+	        border-radius: 4px;
+	-webkit-transition: all 2s linear;
+	transition: all 2s linear;
+}
+.background_button2 {
+	width: 30px;
+	height: 50px;
+	background-color: #939393;
+	position: relative;
+	z-index: 8;
+	top: -350px;
+	left:1130px;
+	-webkit-border-radius: 4px;
+	        border-radius: 4px;
+	-webkit-transition: all 2s linear;
+	transition: all 2s linear;
 }
